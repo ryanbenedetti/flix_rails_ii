@@ -44,11 +44,49 @@ describe "A user" do
     expect(user2.errors[:email].first).to eq("has already been taken")
   end
 
+
+it "requires a username" do
+    user = User.new(username: "")
+
+    user.valid?
+
+    expect(user.errors[:username].any?).to eq(true)
+  end
+
+
+  it "accepts properly formatted username" do
+    usernames = %w[user9 thisismyusername]
+    usernames.each do |username|
+      user = User.new(username: username)
+      user.valid?
+      expect(user.errors[:username].any?).to eq(false)
+    end
+  end
+
+  it "rejects improperly formatted usernames" do
+    usernames = %w[can_i_use_underlines? >user$##@! -->exampLEcom]
+     usernames.each do |username|
+      user = User.new(username: username)
+      user.valid?
+      expect(user.errors[:username].any?).to eq(true)
+    end
+  end
+
+  it "requires a unique, case insensitive username" do
+    user1 = User.create!(user_attributes)
+
+    user2 = User.new(username: user1.username.upcase)
+    user2.valid?
+    expect(user2.errors[:username].first).to eq("has already been taken")
+  end
+
+
   it "is valid with example attributes" do
     user = User.new(user_attributes)
 
     expect(user.valid?).to eq(true)
   end
+
 
   it "requires a password" do
     user = User.new(password: "")
