@@ -10,10 +10,11 @@ describe "Creating a new user" do
 
     fill_in "Name",  with: "Example User"
     fill_in "Email", with: "user@example.com"
+    fill_in "Username", with: "exampleuserdude"
     fill_in "Password", with: "secret"
     fill_in "Confirm Password", with: "secret"
 
-    click_button 'Create User'
+    click_button 'Create Account'
 
     expect(current_path).to eq(user_path(User.last))
 
@@ -25,7 +26,7 @@ describe "Creating a new user" do
     visit signup_url
 
     expect {
-      click_button 'Create User'
+      click_button 'Create Account'
     }.not_to change(User, :count)
 
     expect(page).to have_text('error')
