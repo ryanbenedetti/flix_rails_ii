@@ -6,6 +6,9 @@ class ApplicationController < ActionController::Base
   private	
 
   def require_signin
+      # Keep track of where user was
+      session[:intended_url] = request.url
+
     unless current_user
       redirect_to new_session_url, alert: "Please sign in first!"
     end	
@@ -22,5 +25,12 @@ class ApplicationController < ActionController::Base
 
     #helper_methods are available to controllers and views
 	helper_method :current_user
+
+    def current_user?(user)
+      current_user == user
+    end
+
+    #helper_methods are available to controllers and views
+  helper_method :current_user?
 
 end
