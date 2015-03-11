@@ -2,6 +2,7 @@ class UsersController < ApplicationController
 
 before_action :require_signin, except: [:new, :create]
 before_action :require_correct_user, only: [:edit, :update, :destroy]
+before_action :require_admin, only: [:destroy]
 
 # Not on before_aton callbacks: The order in which you declare before_action methods is crucial. 
 # Before an action is run, the before_action methods are executed in turn starting at the top and working down. 
@@ -45,8 +46,8 @@ end
 
 
 def destroy
+    @user = User.find(params[:id])
     @user.destroy
-    session[:user_id] = nil
     redirect_to root_url, alert: "Account successfully deleted!"
 end
 

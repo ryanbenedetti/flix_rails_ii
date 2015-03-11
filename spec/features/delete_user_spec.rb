@@ -2,10 +2,15 @@ require 'spec_helper'
 
 describe "Deleting a user" do
 
+before do
+  admin = User.create!(user_attributes(admin: true))
+  sign_in(admin)
+end
+
 it "destroys the user and redirects to the home page" do
     user = User.create!(user_attributes)
 
-    sign_in(user)
+    #sign_in(user)
 
     visit user_path(user)
 
@@ -22,7 +27,7 @@ it "destroys the user and redirects to the home page" do
 it "automatically signs out that user" do
   user = User.create!(user_attributes)
 
-  sign_in(user)
+  #sign_in(user)
 
   visit user_path(user)
 
