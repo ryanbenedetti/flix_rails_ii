@@ -43,10 +43,16 @@
     <%= link_to "Write Review", new_movie_review_path(@movie), 
                 class: 'button ok review' %>
     <nav>
+
+    <% if current_user_admin? %> 
+      <!-- Hide links from folks who aren't Admins-->
+    
       <%= link_to 'Edit', edit_movie_path(@movie), class: 'button' %>
       <%= link_to 'Delete', @movie, 
                   class: 'button',
                   method: :delete, data: { confirm: 'Are you sure?' } %>
+    <% end %>
+
     </nav>
   </footer>
 </article>
