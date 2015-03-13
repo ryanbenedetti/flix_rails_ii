@@ -1,0 +1,14 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "."
+		}
+	],
+
+	 "settings":
+    {
+        "color_scheme": "Packages/Colorsublime-Themes/Pragmatica.tmTheme"
+    }
+}

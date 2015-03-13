@@ -1,0 +1,266 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"user",
+				"user_id"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 297.0,
+		"selected_items":
+		[
+			[
+				"Package Con",
+				"Package Control: Install Package"
+			],
+			[
+				"Install",
+				"Package Control: Install Package"
+			],
+			[
+				"PAckage COntrol",
+				"Package Control: Install Package"
+			],
+			[
+				"Pac",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"About"
+			]
+		],
+		"width": 457.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/rhinojbenedetti/dev_work/rails_ii_studio/flix_rails_ii"
+	],
+	"file_history":
+	[
+		"/Users/rhinojbenedetti/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/rhinojbenedetti/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/rhinojbenedetti/Library/Application Support/Sublime Text 3/Packages/User/JSON.sublime-settings",
+		"/Users/rhinojbenedetti/dev_work/rails_ii_studio/flix_rails_ii/spec/controllers/users_controller_spec.rb",
+		"/Users/rhinojbenedetti/dev_work/rails_ii_studio/flix_rails_ii/spec/features/delete_user_spec.rb",
+		"/Users/rhinojbenedetti/dev_work/rails_ii_studio/flix_rails_ii/spec/features/edit_user_spec.rb",
+		"/Users/rhinojbenedetti/dev_work/rails_ii_studio/flix_rails_ii/app/controllers/users_controller.rb",
+		"/Users/rhinojbenedetti/dev_work/rails_ii_studio/events_rails_ii/app/controllers/events_controller.rb",
+		"/Users/rhinojbenedetti/dev_work/rails_ii_studio/flix_rails_ii/spec/models/user_spec.rb",
+		"/Users/rhinojbenedetti/dev_work/rails_ii_studio/flix_rails_ii/app/assets/stylesheets/_colors.scss",
+		"/Users/rhinojbenedetti/dev_work/rails_ii_studio/flix_rails_ii/app/views/layouts/_header.html.erb",
+		"/Users/rhinojbenedetti/dev_work/rails_ii_studio/flix_rails_ii/log/development.log",
+		"/Users/rhinojbenedetti/dev_work/rails_ii_studio/flix_rails_ii/app/views/users/edit.html.erb",
+		"/Users/rhinojbenedetti/dev_work/rails_ii_studio/flix_rails_ii/app/views/users/show.html.erb",
+		"/Users/rhinojbenedetti/dev_work/rails_ii_studio/flix_rails_ii/spec/features/sign_in_spec.rb",
+		"/Users/rhinojbenedetti/dev_work/rails_ii_studio/flix_rails_ii/spec/support/attributes.rb",
+		"/Users/rhinojbenedetti/dev_work/rails_ii_studio/flix_rails_ii/app/views/users/_form.html.erb",
+		"/Users/rhinojbenedetti/dev_work/rails_ii_studio/flix_rails_ii/spec/features/create_user_spec.rb",
+		"/Users/rhinojbenedetti/dev_work/rails_ii_studio/flix_rails_ii/spec/features/list_users_spec.rb",
+		"/Users/rhinojbenedetti/dev_work/rails_ii_studio/flix_rails_ii/spec/features/show_user_spec.rb",
+		"/Users/rhinojbenedetti/dev_work/rails_apps/article_wysiwyg/.gitignore",
+		"/Users/rhinojbenedetti/dev_work/rails_apps/article_wysiwyg/config/environments/production.rb",
+		"/Users/rhinojbenedetti/dev_work/rails_apps/article_wysiwyg/config/initializers/wrap_parameters.rb",
+		"/Users/rhinojbenedetti/dev_work/rails_apps/article_wysiwyg/tmp/cache/assets/development/sprockets/c0e3dd9a3a0426d132f4893d6e82bc8b",
+		"/Users/rhinojbenedetti/dev_work/rails_apps/article_wysiwyg/tmp/cache/assets/development/sprockets/a56f6d24902769d7b7d7b93b5eafd7f7",
+		"/Users/rhinojbenedetti/dev_work/rails_studio/flix/db/seeds.rb",
+		"/Users/rhinojbenedetti/Google Drive/CODE/Ruby/Beginning_Ruby/ch12_ruby_liza",
+		"/Users/rhinojbenedetti/Desktop/jQ_to_DOM-ville.html",
+		"/Users/rhinojbenedetti/HFjQ2_ed/Code/chapter1/ch01_step02/furry_friends.html",
+		"/Users/rhinojbenedetti/HFjQ2_ed/Code/chapter1/end/furry_friends.html",
+		"/Users/rhinojbenedetti/dev_work/rails_apps/upfsg/app/views/opportunities/index.html.erb",
+		"/Users/rhinojbenedetti/dev_work/rails_apps/upfsg/Gemfile",
+		"/Users/rhinojbenedetti/dev_work/rails_apps/upfsg/app/controllers/opportunities_controller.rb",
+		"/Users/rhinojbenedetti/dev_work/rails_apps/upfsg/app/helpers/application_helper.rb",
+		"/Users/rhinojbenedetti/dev_work/rails_apps/upfsg/app/assets/javascripts/application.js",
+		"/Users/rhinojbenedetti/dev_work/rails_apps/upfsg/app/assets/stylesheets/opportunities.css.scss",
+		"/Users/rhinojbenedetti/dev_work/rails_apps/upfsg/app/views/layouts/application.html.erb",
+		"/Users/rhinojbenedetti/dev_work/rails_apps/upfsg/app/views/opportunities/_form.html.erb",
+		"/Users/rhinojbenedetti/dev_work/rails_apps/upfsg/app/assets/stylesheets/application.css.sass",
+		"/Users/rhinojbenedetti/dev_work/rails_apps/upfsg/app/views/opportunities/show.html.erb",
+		"/Users/rhinojbenedetti/dev_work/rails_apps/upfsg/app/views/opportunities/edit.html.erb",
+		"/Users/rhinojbenedetti/dev_work/rails_apps/upfsg/app/views/opportunities/new.html.erb",
+		"/Users/rhinojbenedetti/Google Drive/UP_Work/UP_WebApps/UPSFG_opportunities_app/UPSFG_seed_file.txt",
+		"/Users/rhinojbenedetti/Google Drive/CODE/Ruby/PragStudios_Ruby/flicks/flicks.rb",
+		"/Users/rhinojbenedetti/HFjQ2_ed/Code/chapter1/begin/furry_friends.html",
+		"/Users/rhinojbenedetti/HFjQ2_ed/Code/chapter1/begin/js/my_script.js",
+		"/Users/rhinojbenedetti/Desktop/chapter_01/furry_friends.html",
+		"/Users/rhinojbenedetti/Desktop/chapter_01/furry_friends_files/my_style.css",
+		"/Users/rhinojbenedetti/dev_work/studio_game/flix.rb",
+		"/Users/rhinojbenedetti/Google Drive/UP_Work/UP_WebApps/UPSFG_opportunities_app/UPSFG_seed_file_DATE_TEST.txt",
+		"/Users/rhinojbenedetti/HFjQ2_ed/Code/hfjq2e_code/hfjq2e_ch01/hfjq2e_ch01_middle/css/my_style.css",
+		"/Users/rhinojbenedetti/HFjQ2_ed/Code/hfjq2e_code/hfjq2e_ch01/hfjq2e_ch01_middle/furry_friends_ch01_p22.html",
+		"/Users/rhinojbenedetti/Desktop/PassengerPane-1.3/README.rdoc",
+		"/Users/rhinojbenedetti/HFjQ2_ed/Code/hfjq2e_code/hfjq2e_ch01/hfjq2e_ch01_begin/js/my_script.js",
+		"/Users/rhinojbenedetti/HFjQ2_ed/Code/hfjq2e_code/hfjq2e_ch01/hfjq2e_ch01_begin/css/my_style.css",
+		"/Users/rhinojbenedetti/HFjQ2_ed/Code/chapter1/hfjq2e_ch01_begin/furry_friends.html",
+		"/Users/rhinojbenedetti/HFjQ2_ed/Code/hfjq2e_code/hfjq2e_ch01/hfjq2e_ch01_begin/furry_friends.html",
+		"/Users/rhinojbenedetti/HFjQ2_ed/Code/hfjq2e_code/hfjq2e_ch01_end/furry_friends.html",
+		"/Users/rhinojbenedetti/HFjQ2_ed/Code/code/ch01/end/index.html",
+		"/Users/rhinojbenedetti/HFjQ2_ed/Code/hfjq2e_ch01_begin/js/my_script.js",
+		"/Users/rhinojbenedetti/HFjQ2_ed/Code/hfjq2e_ch01_begin/css/my_style.css",
+		"/Users/rhinojbenedetti/HFjQ2_ed/Code/hfjq2e_ch01_begin/Furry_Friends.html",
+		"/Users/rhinojbenedetti/HFjQ2_ed/Code/hfjq2e_ch01_begin/css/style.css"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"article",
+			"&gt;",
+			"&lt;",
+			", website: \"www.",
+			")\", amount: ",
+			"\", amount: ",
+			"deadline: \"",
+			"”"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"post",
+			">",
+			"<",
+			", website: \"http://www.",
+			"\"), amount: ",
+			")\", amount: ",
+			"deadline: DateTime.parse(\"",
+			"\""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 29.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "flix_rails_ii.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"_he",
+				"app/views/layouts/_header.html.erb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 231.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
