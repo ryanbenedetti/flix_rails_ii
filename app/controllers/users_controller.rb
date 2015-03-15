@@ -16,6 +16,9 @@ end
 
 def show
   @user = User.find(params[:id])
+  #wire up users to be accessible on view page
+  @reviews = @user.reviews
+  @favorite_movies = @user.favorite_movies
 end
 
 def new

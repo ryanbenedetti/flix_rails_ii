@@ -101,6 +101,20 @@ Movie.create!([
     director: 'Ishiro Honda',
     rating: 'PG-13',
     total_gross: 387_623_910
+  },
+  {
+    title: 'Guardians of the Galaxy',
+    description: 
+    %{
+      A group of intergalactic criminals are forced to work together
+      to stop a fanatical warrior from taking control of the universe.
+    }.squish,
+    image_file_name: 'guardians, Guardians',
+    released_on: "2014-08-01",
+    duration: '121 min',
+    director: 'James Gunn',
+    rating: 'PG-13',
+    total_gross: 333_130_696
   }
 ])
 
@@ -110,3 +124,22 @@ movie.reviews.create!(name: "Gene Siskel", stars: 5, comment: "I'm a better revi
 movie.reviews.create!(name: "Peter Travers", stars: 4, comment: "It's been years since a movie superhero was this fierce and this funny.")
 movie = Movie.find_by(title: 'Superman')
 movie.reviews.create!(name: "Elvis Mitchell", stars: 5, comment: "It's a bird, it's a plane, it's a blockbuster!")
+movie = Movie.find_by(title: 'Guardians of the Galaxy')
+movie.fans << roger
+movie.fans << gene
+movie.fans << elvis
+movie = Movie.find_by(title: 'Spider-man')
+movie.fans << roger
+movie.fans << gene
+movie = Movie.find_by(title: 'Catwoman')
+movie.fans << gene
+movie = Movie.find_by(title: 'Batman')
+movie.fans << gene
+movie.fans << elvis
+movie = Movie.find_by(title: 'Batman vs. Godzilla')
+movie.fans << roger
+movie.fans << elvis
+movie = Movie.find_by(title: 'Superman')
+movie.fans << elvis
+
+

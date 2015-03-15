@@ -171,6 +171,18 @@ describe "A movie" do
     end
   end
 
+it "has fans" do
+  movie = Movie.new(movie_attributes)
+  fan1 = User.new(user_attributes(email: "larry@example.com"))
+  fan2 = User.new(user_attributes(email: "moe@example.com"))
+
+  movie.favorites.new(user: fan1)
+  movie.favorites.new(user: fan2)
+
+  expect(movie.fans).to include(fan1)
+  expect(movie.fans).to include(fan2)
+end
+
   context "hits query" do
     it "returns movies with a total gross of at least 300_000_000" do
       movie1 = Movie.create!(movie_attributes(total_gross: 300_000_000))

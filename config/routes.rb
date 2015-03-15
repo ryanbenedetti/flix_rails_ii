@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  resources :favorites
+
   resource :session
   get "signup" => "users#new"
   get "signin" => "sessions#new"

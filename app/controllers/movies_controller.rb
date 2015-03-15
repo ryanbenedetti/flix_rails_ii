@@ -9,6 +9,7 @@ before_action :require_admin, except: [:index, :show]
 
   def show
     @movie = Movie.find(params[:id])
+    @fans = @movie.fans
   end
   
   def edit
@@ -44,11 +45,6 @@ before_action :require_admin, except: [:index, :show]
   end
   
 private
-
-  def require_admin
-    redirect_to root_url, notice: "User not authorizedQ" unless current_user && current_user_admin
-  end
-
 
   def movie_params
     params.require(:movie).permit(:title, :description, :rating, :released_on, :total_gross, :cast, :director, :duration, :image_file_name)

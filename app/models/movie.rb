@@ -1,5 +1,10 @@
 class Movie < ActiveRecord::Base
   has_many :reviews, dependent: :destroy
+  has_many :favorites, dependent: :destroy
+  #Added in Leeson 9, Part I
+  has_many :fans, through: :favorites, source: :user
+  #Added for bonus round
+  has_many :critics, through: :reviews, source: :user
 
   validates :title, presence: true
   
