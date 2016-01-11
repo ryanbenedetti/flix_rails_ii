@@ -15041,3 +15041,100 @@ Processing by MoviesController#show as HTML
   Rendered layouts/_sidebar.html.erb (0.2ms)
   Rendered layouts/_footer.html.erb (0.1ms)
 Completed 200 OK in 86ms (Views: 83.5ms | ActiveRecord: 0.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_favorites_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_favorites_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_favorites_on_movie_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_favorites_on_movie_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_reviews_on_movie_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_reviews_on_movie_id' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateGenres (20160111175008)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "genres" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160111175008"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_favorites_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_favorites_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_favorites_on_movie_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_favorites_on_movie_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_reviews_on_movie_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_reviews_on_movie_id' AND type='index'
+[0m
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mGenre Exists (0.1ms)[0m  SELECT  1 AS one FROM "genres"  WHERE "genres"."name" = 'Action' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "genres" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2016-01-11 17:51:38.201363"], ["name", "Action"], ["updated_at", "2016-01-11 17:51:38.201363"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mGenre Exists (0.1ms)[0m  SELECT  1 AS one FROM "genres"  WHERE "genres"."name" = 'Comedy' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "genres" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2016-01-11 17:51:45.290065"], ["name", "Comedy"], ["updated_at", "2016-01-11 17:51:45.290065"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mGenre Exists (0.1ms)[0m  SELECT  1 AS one FROM "genres"  WHERE "genres"."name" = 'Drama' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "genres" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2016-01-11 17:51:52.467333"], ["name", "Drama"], ["updated_at", "2016-01-11 17:51:52.467333"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mGenre Exists (0.1ms)[0m  SELECT  1 AS one FROM "genres"  WHERE "genres"."name" = 'Romance' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "genres" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2016-01-11 17:51:57.833298"], ["name", "Romance"], ["updated_at", "2016-01-11 17:51:57.833298"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mGenre Exists (0.1ms)[0m  SELECT  1 AS one FROM "genres"  WHERE "genres"."name" = 'Thriller' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "genres" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2016-01-11 17:52:04.414652"], ["name", "Thriller"], ["updated_at", "2016-01-11 17:52:04.414652"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mGenre Exists (0.1ms)[0m  SELECT  1 AS one FROM "genres"  WHERE "genres"."name" = 'Fantasy' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "genres" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2016-01-11 17:52:10.793343"], ["name", "Fantasy"], ["updated_at", "2016-01-11 17:52:10.793343"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mGenre Exists (0.1ms)[0m  SELECT  1 AS one FROM "genres"  WHERE "genres"."name" = 'Documentary' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "genres" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2016-01-11 17:52:18.353221"], ["name", "Documentary"], ["updated_at", "2016-01-11 17:52:18.353221"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mGenre Exists (0.1ms)[0m  SELECT  1 AS one FROM "genres"  WHERE "genres"."name" = 'Adventure' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "genres" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2016-01-11 17:52:24.979367"], ["name", "Adventure"], ["updated_at", "2016-01-11 17:52:24.979367"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mGenre Exists (0.1ms)[0m  SELECT  1 AS one FROM "genres"  WHERE "genres"."name" = 'Animation' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "genres" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2016-01-11 17:52:32.257938"], ["name", "Animation"], ["updated_at", "2016-01-11 17:52:32.257938"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mGenre Exists (0.1ms)[0m  SELECT  1 AS one FROM "genres"  WHERE "genres"."name" = 'Sci-Fi' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "genres" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2016-01-11 17:52:38.928988"], ["name", "Sci-Fi"], ["updated_at", "2016-01-11 17:52:38.928988"]]
+  [1m[35m (0.9ms)[0m  commit transaction
