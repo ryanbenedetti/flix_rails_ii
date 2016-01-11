@@ -6,6 +6,12 @@ class Movie < ActiveRecord::Base
   #Added for bonus round
   has_many :critics, through: :reviews, source: :user
 
+  # a has_many association with characterizations
+  has_many :characterizations, dependent: :destroy
+
+  # a has_many association with genres that goes through the characterizations association
+  has_many :genres, through: :characterizations
+
   validates :title, presence: true
   
   validates :released_on, :duration, presence: true
